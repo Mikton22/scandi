@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/arialmt.ttf") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #533738;
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+}
+
+.page-header {
+
+}
+
+.navigation {
+    font-size: 16px;
+}
+
+.navigation-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 28px;
+}
+
+button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 25px 66px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #533738;
+    background-color: #CC8B86;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    margin-right: 26px;
+    margin-left: 89px;
+}
+
+.main-offer {
+    margin-top: 91px;
+}
+
+.about {
+    margin-left: 89px;
+    margin-right: 26px;
+}
+
+.portfolio {
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.team {
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.work {
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.recal {
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.bid {
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.nav-phone{
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.page-main {
+    padding-left: 220px;
+    height: 740px;
+}
+
+.main-main {
+    background-image: url("./image/main-bg.png");
+    background-repeat:no-repeat;
+    background-position: 0 center;
+    background-size: cover;
+}
