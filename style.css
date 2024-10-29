@@ -6,29 +6,72 @@
     font-display: swap;
 }
 
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Montserrat-VariableFont_wght.ttf") format("woff2");
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
     color: #533738;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
+    background-color: #F6EDE9;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
-    margin: auto;
-}
-
-.page-header {
-
+    width: 1400px;
+    margin: 0 auto;
 }
 
 .navigation {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
     font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
 }
 
 .navigation-menu {
     display: flex;
-    list-style-type: none;
     margin: 0;
     padding-top: 28px;
+    list-style: none;
+}
+
+.navigation-item {
+    margin-right: 26px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
 }
 
 button {
@@ -47,53 +90,26 @@ button {
     cursor: pointer;
 }
 
-.logo {
-    margin-right: 26px;
-    margin-left: 89px;
+.button:hover, .button:focus {
+    background-color: #BA7F7A;
+    border: 3px solid rgba(174, 119, 115, 1);
+}
+
+.button:active {
+    background-color: rgba(174, 119, 115, 1);
 }
 
 .main-offer {
     margin-top: 91px;
-}
-
-.about {
-    margin-left: 89px;
-    margin-right: 26px;
-}
-
-.portfolio {
-    margin-left: 26px;
-    margin-right: 26px;
-}
-
-.team {
-    margin-left: 26px;
-    margin-right: 26px;
-}
-
-.work {
-    margin-left: 26px;
-    margin-right: 26px;
-}
-
-.recal {
-    margin-left: 26px;
-    margin-right: 26px;
-}
-
-.bid {
-    margin-left: 26px;
-    margin-right: 26px;
-}
-
-.nav-phone{
-    margin-left: 26px;
-    margin-right: 26px;
+    line-height: 62px;
+    font-size: 50px;
+    text-decoration: none;
 }
 
 .page-main {
     padding-left: 220px;
     height: 740px;
+    margin-left: 85px;
 }
 
 .main-main {
@@ -101,4 +117,53 @@ button {
     background-repeat:no-repeat;
     background-position: 0 center;
     background-size: cover;
+}
+
+.main-about {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.btn.bid {
+    line-height: 20px;
+}
+
+.logo::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 22px;
+    left: 120px;
+    background-image: url("image/logo-scandi.svg");
+}
+
+/*2 страница*/
+
+.page-about {
+    width: 1400px;
+    height: 849px;
+}
+
+.about-content--text {
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-advantages {
+    background-color: #8D7370;
+    margin-top: 465px;
+}
+
+.about-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content-photo {
+    margin: 0 64px 21px 0;
+}
+
+.about-content--main {
+    margin: -490px 0 0 508px;
 }
