@@ -142,7 +142,7 @@ button {
 
 .page-about {
     width: 1400px;
-    height: 849px;
+    height: 930px;
 }
 
 .about-content--text {
@@ -151,13 +151,24 @@ button {
 }
 
 .about-advantages {
+    display: flex;
+    position: center;
     background-color: #8D7370;
-    margin-top: 465px;
+    margin-top: 152px;
+    justify-content: space-between;
+    padding: 85px 182px 81px 182px;
+    align-items: baseline;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 400;
+    list-style-type: none;
+    color: white;
 }
 
 .about-content {
     justify-content: space-between;
     align-items: center;
+    margin-left: 183px;
 }
 
 .about-content-photo {
@@ -165,5 +176,65 @@ button {
 }
 
 .about-content--main {
-    margin: -490px 0 0 508px;
+    margin: -490px 0 0 683px;
+    font-size: 18px;
+    text-align: left;
+    width: 528px;
+    height: 330px;
+    line-height: 30px;
+}
+
+.about-advantages--exp,
+.about-advantages--project,
+.about-advantages--reward
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*3 страница*/
+
+.page-portfolio {
+    width: 1200px;
+    margin: 65px auto;
+}
+
+.page-portfolo--example-one {
+    position: relative;
+    width: 692px;
+    height: 451px;
+    overflow: hidden;
+    border: 1px solid #ccc; /* Рамка вокруг блока */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    border-radius: 8px; /* Закруглённые углы */
+}
+
+.page-portfolo--example-two--photo-rectangle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Затемнение изображения */
+}
+
+.example-one--header, .example-one--text {
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.example-one--header {
+    top: 20%;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.example-one--text {
+    bottom: 20%;
+    font-size: 16px;
+    line-height: 1.4;
 }
