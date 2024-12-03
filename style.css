@@ -43,6 +43,10 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
 .container {
     width: 1400px;
     margin: 0 auto;
@@ -269,4 +273,54 @@ button {
     background-image: url("image/arrow-for-button.svg");
     top: 12px;
     right: -70px;
+}
+
+/*4 страница*/
+
+.team {
+    background-color: #E2C4BA;
+    padding: 50px 100px 35px;
+}
+
+.team__title {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.team__workers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 38px 38px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team_explain {
+    text-align: center;
+    margin: 0 0 35px;
+}
+
+.team_explain__advantage {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.method-of-work__title {
+    text-align: center;
+}
+
+.method-of-work__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.method-of-work__item {
+    list-style-type: none;
 }
