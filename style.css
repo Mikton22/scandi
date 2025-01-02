@@ -277,8 +277,14 @@ button {
 
 /*4 страница*/
 
-.team {
+.team-of-three {
     background-color: #E2C4BA;
+    text-align: center;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.team-girls {
     padding: 50px 100px 35px;
 }
 
@@ -323,4 +329,21 @@ button {
 
 .method-of-work__item {
     list-style-type: none;
+}
+
+/*5 страница*/
+
+.reviews{
+
+}
+
+.reviews-text{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.reviews__text {
+    text-align: center;
+    font-size: 30px;
 }
